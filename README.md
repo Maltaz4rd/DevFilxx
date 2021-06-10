@@ -9,12 +9,6 @@
 
 React application similar to netflix.
 
-"Dance it does not only make us move our body but also moves our souls"
-
-What is dance? Give all of you, surround your soul, feel the beat and show it. 
-
-Here you can see videos of the top 10 most famous types of dance.
-
 <h3>Tecnologies 🚀</h3>
 <ul>
     <li><a href="https://reactjs.org/" target="_blank">React</a></li>
