@@ -43,7 +43,7 @@ function CadastroCategoria() {
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
       ? 'https://localhost:8080/categorias'
-      : 'https://danceflix-back.heroku.com/categorias';
+      : 'https://devflix-back.heroku.com/categorias';
     fetch(URL)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
@@ -65,7 +65,7 @@ function CadastroCategoria() {
     <table style={table}>
       <tbody>
         <tr>
-          <th style={tableth}>Categories</th>
+          <th style={tableth}>Categorias</th>
         </tr>
       </tbody>
       {categorias.map((categoria) => (
@@ -83,7 +83,7 @@ function CadastroCategoria() {
   return (
     <PageDefault>
       <h1>
-        Category Registration:
+        Cadastro de categoria:
         {values.titulo}
       </h1>
 
@@ -109,7 +109,7 @@ function CadastroCategoria() {
       >
 
         <FormField
-          label="Category name: "
+          label="Nome da categoria: "
           type="text"
           name="titulo"
           value={values.titulo}
@@ -117,7 +117,7 @@ function CadastroCategoria() {
         />
 
         <FormField
-          label="Description: "
+          label="Descrição: "
           type="textarea"
           name="text"
           value={values.text}
@@ -125,7 +125,7 @@ function CadastroCategoria() {
         />
 
         <FormField
-          label="Color"
+          label="Cor"
           type="color"
           name="cor"
           value={values.cor}
@@ -133,7 +133,7 @@ function CadastroCategoria() {
         />
 
         <Button>
-          Register
+          Registrar
         </Button>
       </form>
 

@@ -5,15 +5,15 @@ import GitHub from '../../assets/img/github.jpg';
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.github.com/beatrizadm/">
+      <a href="https://www.github.com/Maltaz4rd">
         <img src={GitHub} height="40" alt="Logo GitHub" />
       </a>
       <p>
-        2020
+        2021
         {' © '}
-        <a href="https://www.linkedin.com/in/beatrizadm/">
-          Beatriz Miranda
-        </a>
+        <p href="">
+          Ademir Gama
+        </p>
       </p>
     </FooterBase>
   );

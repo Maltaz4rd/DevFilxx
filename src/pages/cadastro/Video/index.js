@@ -29,7 +29,7 @@ function CadastroVideo() {
 
   return (
     <PageDefault>
-      <h1>Video registration</h1>
+      <h1>Registrar novo video</h1>
       <form onSubmit={(event) => {
         event.preventDefault();
 
@@ -38,7 +38,7 @@ function CadastroVideo() {
         });
     
         if (!categoriaEscolhida) {
-          alert('Choose an existing category or register a different one!');
+          alert('Selecione uma categoria existente ou se preferir crie uma nova categoria!');
         } else {
           videosRepository.create({
             titulo: values.titulo,
@@ -46,7 +46,7 @@ function CadastroVideo() {
             categoriaId: categoriaEscolhida.id,
           })
             .then(() => {
-              console.log('Successfully registered!');
+              console.log('Registrado com sucesso!');
               history.push('/');
             })
             .catch((error) => {
@@ -56,21 +56,21 @@ function CadastroVideo() {
       }}
       >
         <FormField
-          label="Title"
+          label="Titulo"
           name="titulo"
           value={values.titulo}
           onChange={handleChange}
         />
 
         <FormField
-          label="URL"
+          label="URL(Link do video)"
           name="url"
           value={values.url}
           onChange={handleChange}
         />
 
         <FormField
-          label="Category"
+          label="Categoria"
           name="categoria"
           value={values.categoria}
           onChange={handleChange}
@@ -78,11 +78,11 @@ function CadastroVideo() {
         />
         <ButtonWrapper>
           <Button type="submit">
-            Register
+            Registrar
           </Button>
           <Link to="/cadastro/categoria">
             <Button type="submit">
-              Category Registration
+              Registrar nova categoria
             </Button>
           </Link>
         </ButtonWrapper>

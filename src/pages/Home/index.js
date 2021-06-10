@@ -42,9 +42,7 @@ function Home() {
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].titulo}
                 url={dadosIniciais[0].videos[0].url}
-                videoDescription="'Dance it does not only make us move our body but also moves our souls'
-                What is dance? Give all of you, surround your soul, feel the beat and show it.
-                Here you can see the top 10 most famous types of dance."
+                videoDescription="Primeira aula do curso de MySql."
               />
               <Carousel
                 ignoreFirstVideo
